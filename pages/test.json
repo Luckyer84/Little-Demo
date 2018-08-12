@@ -1,0 +1,26 @@
+{
+	"code":1,
+	"message": "success",
+	"list":[
+		{
+			"name":"McGrade",
+			"age":22,
+			"password":123789,
+			"skills":[
+				{
+					"id":1,
+					"type":"Java"
+				},
+				{
+					"id":2,
+					"type":"Vue"
+				}
+			]
+		},
+		{
+			"name":"John",
+			"age":20,
+			"password":234234
+		}
+	]
+}

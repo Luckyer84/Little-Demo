@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>主题页面</title>
+<link href="../common/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../src/css/main.css" rel="stylesheet" />
+</head>
+<body>
+	
+	<div class="total-head">
+		<div class="head-top">
+			<div class="head-top-positon">
+				<embed src="../images/main/icon/cloud.svg" height="16px" width="16px" ></embed>
+				<span>全国站</span>&nbsp;
+				<a href="#">[切换城市]</a>
+			</div>
+			<div class="head-top-rightAll">
+				<div class="head-top-exit">
+					<button class="btn btn-danger">退出</button>
+				</div>
+					<div class="head-top-tel">
+					<embed src="../images/main/icon/phone.svg" height="15px" width="15px"></embed>
+					<span>400-885-9898</span>
+				</div>
+				<div class="head-top-person">
+					<embed src="../images/main/icon/person.svg" height="15px" width="15px"></embed>
+					<a href="javascript:void(0)"><span class="showInfo"></span></a><span class="welcome-font">欢迎回来！</span>
+				</div>
+			</div>
+		</div>
+		<div class="head-mid">
+			<div class="d-left">
+					<embed  src="../images/cart/shoppingcar-1.svg" height="50" width="50"></embed>
+					<a href="cart.html">购物车</a>
+			</div>
+			<div class="d-right">
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">学习<span class="caret"></span></button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Java</a></li>
+						<li><a href="#">Python</a></li>
+					</ul>
+				</div>
+			<!--输入框组-->
+				<div class="input-group inpt-gp">
+					<input type="text" class="form-control" placeholder="请输入查询信息..."  size="120" />
+					<span class="input-group-btn" >
+	  				 <button type="submit" class="btn btn-primary"><embed src="../images/main/icon/search.svg" height="15px" width="15px"></embed></button>
+					</span>
+				</div>	
+			</div>
+		</div>
+		<nav class="head-bottom">
+			<ul>
+				<li><a href="#">首页</a>
+					<div class="d"></div></li>
+				<li><a href="#">课程</a>
+					<div class="d"></div></li>
+				<li><a href="#">实战</a>
+					<div class="d"></div></li>
+				<li><a href="#">猿问</a>
+					<div class="d"></div></li>
+				<li><a href="#">手记<sup>hot</sup></a>
+					<div class="d"></div></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
+	<div class="total-body">
+		<div class="aside-left">	 
+	        <nav class="navbar self-nav">
+	            <ul id="uu" class="nav nav-pills nav-stacked">
+	                <li ><a href="javascript:void(0)">前端开发<span>></span></a></li>
+	                <li ><a href="javascript:void(0)">后端开发<span>></span></a></li>
+	                <li ><a href="javascript:void(0)">移动开发<span>></span></a></li>
+	                <li ><a href="javascript:void(0)">数据库<span>></span></a></li>
+	                <li ><a href="javascript:void(0)">云计算 | 大数据 <span>></span></a></li>
+	                <li ><a href="javascript:void(0)">运维 | 测试 <span>></span></a></li>
+	                <li ><a href="javascript:void(0)">UI设计<span>></span></a></li>        
+	            </ul>
+	        </nav>  
+		</div>
+		
+		<div class="body-main">
+			<figure alt="this is a picture"><img src="../images/main/650-4.jpg"/></figure>
+			<figure alt="this is a picture"><img src="../images/main/650-2.jpg"/></figure>
+			<figure alt="this is a picture"><img src="../images/main/650-3.jpg"/></figure>
+			<figure alt="this is a picture"><img src="../images/main/650-1.png"/></figure>
+			<ul id="main-blackPoint">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!--右侧栏-->
+		<div class="aside-right">
+			<!--头像信息栏-->
+			<div class="aside-personInfo">
+				<figure><img src="../images/main/touxiang.jpg"  /></figure>
+				<div class="change-head"><a href="#">更改头像</a></div>	
+				<div class="person-msg">
+					<p id="p1">Hi,<span class="showInfo"></span></p>
+					<p id="p2">欢迎回来，<span id="timeInfo"></span></p>
+				</div>
+			</div>
+			<!--数字栏-->
+			<div class="aside-num">
+				<div><span id="lanmu" class="num"></span><a><span>栏</span><br /><p>看 过</p></a></div>
+				<div><span class="num">0</span><a><span>条</span><br /><p>看 过</p></a></div>
+			</div>
+			<!--信息栏-->
+			<div id="tingall" class="aside-info">
+				<p id="hot-poit">职场热点</p>
+				<section><a href="#">6个工作后才知道的职场真相</a></section>
+				<section><a href="#">这样的职场法则你认同吗？</a></section>
+				<section><img src="../images/main/fire.png" /><a href="#">这是你要踏上的成功的阶梯吗？</a></section>
+			</div>
+				
+		</div>		
+	</div>
+	<!--右侧固定栏-->
+		<ul class="sidebar">
+			<li class="sidebar-list"><a href="#"><img src="../images/main/icon/icon-sidepic-1.svg" width="24" height="25"/></a></li>
+			<li class="sidebar-list"><a href="#"><img src="../images/main/icon/icon-sidepic-2.svg" width="24" height="25" /></a></li>
+			<li class="sidebar-list"><a href="#"><img src="../images/main/icon/icon-sidepic-3.svg" width="24" height="25" /></a></li>
+			<li class="sidebar-list"><a href="#"><img src="../images/main/icon/icon-sidepic-4.svg" width="24" height="25" /></a></li>
+		</ul>
+	  <!--弹框-->
+	<div id="window-list-all">
+	    <div class="window-list list-one">
+	    	<div class="containerall">
+	        	<div class="container1">
+	            	<h4>基础</h4>
+	                <ul class="list-inline">
+	                	<li><a href="#">HTML/CSS</a></li>
+	                    <li><a href="#">Javascript</a></li>
+	                    <li><a href="#">jQuery</a></li>
+	                </ul>
+	                
+	                <h4 style="margin-top:30px;">进阶</h4>
+	                <ul class="list-inline">
+	                	<li><a href="#">HTML5</a></li>
+	                    <li><a href="#">css3</a></li>
+	                    <li><a href="#">Node.js</a></li>
+	                    <li><a href="#">bootstrap</a></li>
+	                </ul>
+	            </div>
+	          <!--弹窗下面4个模块-->  
+	            <div class="container2">
+	            	<div class="row">
+	                	<div class="col-sm-6">
+	                        <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div>
+	                        </div>
+	                        
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    
+	    <div class="window-list list-two">
+	    	<div class="containerall">
+	        	<div class="container1">
+	            	<h4>基础</h4>
+	                <ul class="list-inline">
+	                	<li><a href="#">JAVA</a></li>
+	                    <li><a href="#">PYTHON</a></li>
+	                    <li><a href="#">C++</a></li>
+	                </ul>
+	                
+	                <h4 style="margin-top:30px;">进阶</h4>
+	                <ul class="list-inline">
+	                	<li><a href="#">SSH</a></li>
+	                    <li><a href="#">SSM</a></li>
+	                    <li><a href="#">Spring Boot</a></li>
+	                    <li><a href="#">Spring Cloud</a></li>
+	                    <li><a href="#">微服务</a></li>
+	                </ul>
+	            </div>
+	          <!--弹窗下面4个模块-->  
+	            <div class="container2">
+	            	<div class="row">
+	                	<div class="col-sm-6">
+	                        <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div>
+	                        </div>
+	                        
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    
+    	<div class="window-list list-three">
+	    	<div class="containerall">
+	        	<div class="container1">
+	            	<h4>基础</h4>
+	                <ul class="list-inline">
+	                	<li><a href="#">Android</a></li>
+	                    <li><a href="#">Ios</a></li>
+	                    <li><a href="#">Wexx</a></li>
+	                </ul>
+	                
+	                <h4 style="margin-top:30px;">进阶</h4>
+	                <ul class="list-inline">
+	                	<li><a href="#">React Native</a></li>
+	                    <li><a href="#">xxx1</a></li>
+	                    <li><a href="#">xxx2</a></li>
+	                </ul>
+	            </div>
+	          <!--弹窗下面4个模块-->  
+	            <div class="container2">
+	            	<div class="row">
+	                	<div class="col-sm-6">
+	                        <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div>
+	                        </div>
+	                        
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    
+	    <div class="window-list list-four">
+	    	<div class="containerall">
+	        	<div class="container1">
+	            	<h4>基础</h4>
+	                <ul class="list-inline">
+	                	<li><a href="#">Mysql</a></li>
+	                    <li><a href="#">Oracle</a></li>
+	                    <li><a href="#">Sql Server</a></li>
+	                </ul>
+	                
+	                <h4 style="margin-top:30px;">进阶</h4>
+	                <ul class="list-inline">
+	                	<li><a href="#">功能测试</a></li>
+	                    <li><a href="#">MongoDB</a></li>
+	                    <li><a href="#">分布式</a></li>
+	                    
+	                </ul>
+	            </div>
+	          <!--弹窗下面4个模块-->  
+	            <div class="container2">
+	            	<div class="row">
+	                	<div class="col-sm-6">
+	                        <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div>
+	                        </div>
+	                        
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    
+	    <div class="window-list list-five">
+	    	<div class="containerall">
+	        	<div class="container1">
+	            	<h4>基础</h4>
+	                <ul class="list-inline">
+	                	<li><a href="#">算法</a></li>
+	                    <li><a href="#">数据结构</a></li>>
+	                </ul>
+	                
+	                <h4 style="margin-top:30px;">进阶</h4>
+	                <ul class="list-inline">
+	                	<li><a href="#">大数据</a></li>
+	                    <li><a href="#">云计算</a></li>
+	                </ul>
+	            </div>
+	          <!--弹窗下面4个模块-->  
+	            <div class="container2">
+	            	<div class="row">
+	                	<div class="col-sm-6">
+	                        <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div>
+	                        </div>
+	                        
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    
+	    <div class="window-list list-six">
+	    	<div class="containerall">
+	        	<div class="container1">
+	            	<h4>基础</h4>
+	                <ul class="list-inline">
+	                	<li><a href="#">运维</a></li>
+	                    <li><a href="#">Linux</a></li>
+	                    <li><a href="#">安全测试</a></li>
+	                </ul>
+	                
+	                <h4 style="margin-top:30px;">进阶</h4>
+	                <ul class="list-inline">
+	                	<li><a href="#">性能测试</a></li>
+	                    <li><a href="#">自动化测试</a></li>
+	                    <li><a href="#">接口测试</a></li>
+	                </ul>
+	            </div>
+	          <!--弹窗下面4个模块-->  
+	            <div class="container2">
+	            	<div class="row">
+	                	<div class="col-sm-6">
+	                        <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div>
+	                        </div>
+	                        
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	     <div class="window-list list-seven">
+	    	<div class="containerall">
+	        	<div class="container1">
+	            	<h4>基础</h4>
+	                <ul class="list-inline">
+	                	<li><a href="#">模型制作</a></li>
+	                    <li><a href="#">动画特效</a></li>
+	                    <li><a href="#">设计工具</a></li>
+	                </ul>
+	                
+	                <h4 style="margin-top:30px;">进阶</h4>
+	                <ul class="list-inline">
+	                	<li><a href="#">Unity 3D</a></li>
+	                    <li><a href="#">APPUI设计</a></li>
+	                    <li><a href="#">动态交互</a></li>
+	                </ul>
+	            </div>
+	          <!--弹窗下面4个模块-->  
+	            <div class="container2">
+	            	<div class="row">
+	                	<div class="col-sm-6">
+	                        <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div>
+	                        </div>
+	                        
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                    <div class="col-sm-6"> <div class="thumbnail thu" ><a href="#"><span class="glyphicon glyphicon-asterisk"></span></a></div>
+	                        <div ><p>前端进阶：响应式开发</p> <p>职业路径</p></div></div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+   </div>
+	<hr />
+	<!--下面文章栏目-->
+	<div class="articleAll">
+		<div class="article-title">
+				<span><img src="../images/main/icon/xiaoxi.svg" width="16" height="16"/></span>
+				<span id="article-title-font">精彩手记和猿问</span>
+				<span><img src="../images/main/icon/riji.svg" width="20" height="20"/></span>
+		</div>
+		
+		<div class="article-body">
+				<article class="tip-1">
+					<div class="wrap">
+						<section class="tip-1-1">热门话题</section>
+						<section class="tip-1-2">
+							<a href="#">
+								<span>#【内推第2波】#/<span><br />
+								<span>打工奋斗7万落京户VS自主创业牧马城市，如何抉择？</span>
+							</a>
+						</section>
+						<img src="../images/main/icon/job.svg " height="50" width="60" />
+						<div class="clx"></div>
+						<section class="tip-1-3">
+							纠结滋润加班还是苦练x年自主创业？速速提问互撩，你在撩的极有可能就是你的Boss！激不激动？惊不惊喜？Offer已在这里！Offer已在这里！你的简历在哪里？Scott老师邮箱：wolf18387@qq.comJeson老师邮箱：jeson@qq.com
+						</section>
+						<section class="tip-1-4">
+							<a href="#">了解详情 -></a>
+						</section>
+						<div class="clx"></div>
+						<section class="tip-1-5">往期回顾</section>
+						
+						<section class="tip-1-6">
+							<a href="#">
+								<span>#【获奖名单戳查看更多】#/<span><br />
+								<span>当我们谈论Java时，我们都谈些什么？</span>
+							</a>
+						</section>
+						<img src="../images/main/icon/work-2.svg" height="40" width="45" />
+						<div class="clx"></div>
+						
+						<section class="tip-1-7">
+							<a href="#">
+								<span>#【内推第1波】#/<span><br />
+								<span>直击BAT面试机会！行业大佬在线答疑</span>
+							</a>
+						</section>
+						<img src="../images/main/icon/work-1.svg " height="40" width="40" />
+						<div class="clx"></div>
+						
+						<section class="tip-1-8">
+							<a href="javascript:void(0)">更过往期话题 -></a>
+						</section>
+					</div>
+				</article>		
+			
+			
+				<article class="tip-2">
+					<div class="wrap">
+						<section class="sc-1">
+							<figure><img src="../images/main/icon/wenzhang.svg" height="16" width="16" /></figure>手记文章
+						</section>
+						<section class="sc-2"><a href="#">css爆炸级操作</a></section>
+						<section class="sc-3">本文介绍有关css的一些技巧以及一些比较另类的用法，有些情景完全可以避开使用Javascript，单纯的css就可以完美实现 更新日志 2018-08-10 修改基础的 9.禁用鼠标事件、移动端禁止图片长按保存功能 新增基础的 20.横竖屏匹配 新增基础的 21.硬件加速 新增基础的 22.移动端屏幕旋转时，字体大小不改变 新增基础的 23.Animation动画结束时，保持该状态不变 新增伪类、...</section>
+						<section class="sc-4">
+							浏览&nbsp;&nbsp;<span class="mynum">1k+</span>&nbsp;&nbsp;
+							<p ><a class="readAll" href="javascript:void(0)">阅读全文 -></a></p>
+						</section>
+					</div>
+				</article>		
+			
+			
+			<article class="tip-3">
+					<div class="wrap">
+						<section class="sc-1">
+							<figure><img src="../images/main/icon/wenzhang.svg" height="16" width="16" /></figure>手记文章
+						</section>
+						<section class="sc-2"><a href="#">记录一次在github上帮iris找bug和修复的经历(Go最好的We</a></section>
+						<section class="sc-3">Go的web框架有好多，详细对比可以参考《最好的6个Go语言Web框架》其中iris算是比较出类拔萃的，于是在Web应用的开发中，就用它啦。自己想用websocket来做一个简单的在线聊天应用，刚好iris也支持，于是就用它自带的 _examples/websocket ，愉快的玩耍啦。如果只是玩一玩，这个事情也就过去了。只是我对并发请求会出现的线程安全性问题比较有兴趣，于是看了看iris做的we...</section>
+						<section class="sc-4">
+							浏览&nbsp;&nbsp;<span class="mynum">78</span>&nbsp;&nbsp;
+							<p ><a class="readAll" href="javascript:void(0)">阅读全文 -></a></p>
+						</section>
+					</div>
+				</article>		
+				
+				<article class="tip-4">
+					<div class="wrap">
+						<section class="sc-1">
+							<figure><img src="../images/main/icon/wenzhang.svg" height="16" width="16" /></figure>手记文章
+						</section>
+						<section class="sc-2"><a href="#">有奖征文007期 | 大家都见过/写过哪些让你虎躯一震的代码？</a></section>
+						<section class="sc-3">如题。大家都见过/写过哪些让你虎躯一震的代码？就是看到就啧啧称赞厉害的不要不要的，或者让你瞬间怀疑人生的那种……近期发生的产品经理要求实现「根据用户手机壳颜色变换APP皮肤主题」功能和程序员大打出手的事件火爆技术群，想必大家无人不知了。有人说需求很奇葩，有人说完全可实现，小慕就不站队了，怕挨打，（逃……前几天在头条和一位粉丝互动，我开玩笑说“好吧，我要五彩斑斓的黑”，于是我收到了这张图：确实是五彩...</section>
+						<section class="sc-4">
+							浏览&nbsp;&nbsp;<span class="mynum">36</span>&nbsp;&nbsp;
+							<p ><a class="readAll" href="javascript:void(0)">阅读全文 -></a></p>
+						</section>
+					</div>
+				</article>		
+			
+			
+				<article class="tip-5">
+					<div class="wrap">
+						<section class="sc-1">
+							<figure><img src="../images/main/icon/wenzhang.svg" height="16" width="16" /></figure>手记文章
+						</section>
+						<section class="sc-2"><a href="#">SSM框架快速整合搭建(无maven版)</a></section>
+						<section class="sc-3">    Java开发中，最为常见的当属web端开发，其中SSM框架又是应用最为广泛的，因其轻量级、速度快、效率高的特点，在项目相对较小时颇受青睐。下面将对SSM框架的快速整合搭建进行通俗易懂的说明，尽量让大家掌握搭建的流程和基本的概念。    一、SSM的基本概念    所谓SS...</section>
+						<section class="sc-4">
+							浏览&nbsp;&nbsp;<span class="mynum">52</span>&nbsp;&nbsp;
+							<p ><a class="readAll" href="javascript:void(0)">阅读全文 -></a></p>
+						</section>
+					</div>
+				</article>		
+			
+			
+				<article class="tip-6">
+					<div class="wrap">
+						<section class="sc-1">
+							<figure><img src="../images/main/icon/wenzhang.svg" height="16" width="16" /></figure>手记文章
+						</section>
+						<section class="sc-2"><a href="#">Android 打造一个丝滑的自动轮播控件</a></section>
+						<section class="sc-3"> 现在很多的 App 都有自动轮播的 banner 界面，用于展示广告图片或者显示当前比较热门的一些活动，除了具备比较酷炫的效果之外，通过轮播的方式来减少对界面的占用，也是很赞的一个设计点。本文主要是总结自动轮播控件的实现过程，以及对这类控件的一些优化的技巧。 一、如何实现 在开始进行我们的代码编程之前，我们先要思考一下，在 Google 提供的官方 Api 里面，有没有类似的控件实现了相似的功能，...</section>
+						<section class="sc-4">
+							浏览&nbsp;&nbsp;<span class="mynum">25</span>&nbsp;&nbsp;
+							<p ><a class="readAll" href="javascript:void(0)">阅读全文 -></a></p>
+						</section>
+					</div>
+				</article>		
+				
+		</div>
+	</div>
+<script src="../common/libs/jquery/jquery-3.3.1.min.js"></script>
+<script src="../src/js/main.js" ></script>
+<script src="../common/libs/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

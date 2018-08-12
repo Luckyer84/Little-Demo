@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link href="../src/css/cart.css" rel="stylesheet" />
+		<link href="../common/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />	
+	</head>
+	<body>
+
+		<div id="app">
+		
+			<nav><span>购物车</span></nav>
+				<ul class="item-head">
+					<li>商品信息</li>
+					<li>商品金额</li>
+					<li>商品数量</li>
+					<li>总金额</li>
+					<li>编辑</li>
+				</ul>
+				<ul class="item-list">
+					<li v-for="(item,index) in list" :key="item.id">
+					
+						<div class="item-list-msg">
+							<div class="list-check"><input class="check-bn" type="checkbox" :checked="item.checked" @click="selectedProduct(item)"/></div>
+							<div class="list-pic">图片</div>
+							<div class="list-type">{{item.name}}</div>
+						</div>
+						
+							<div class="item-list-price">¥{{item.price}}</div>
+							<div class="item-list-number">
+								<a href="jacascript:void(0)" @click="changeNum(item,1)">+</a>&nbsp;&nbsp;
+								<input type="text" value="0" size=1 v-model="item.count" />&nbsp;&nbsp;
+								<a href="jacascript:void(0)" @click="changeNum(item,-1)">-</a>
+							</div>
+							<div class="item-list-allprice">¥{{item.count*item.price}}</div>
+							<div class="item-list-edit" @click="deleteItem(item)">删除</div>
+						
+					</li>
+				</ul>
+			
+			<div class="footer">
+				<div class="footer-left">
+					<div class="checkall">
+						<input id="chbox" type="checkbox"  :checked="flag"  @click="checkall()"/>
+						<label class="chbox" for="chbox">全选</label>
+					</div>
+				</div>
+				<div class="footer-right">
+					<div>总金额:</div>
+					<div class="countNum">¥{{totalMoney}}</div>
+					<button class="btn btn-danger">结账</button>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="../common/libs/vue/vue.js"></script>
+		<script src="../common/libs/vue/vue-resource.js"></script>
+		<script src="../common/libs/jquery/jquery-3.3.1.min.js"></script>
+		<script src="../src/js/cart.js"></script>
+	</body>
+</html>

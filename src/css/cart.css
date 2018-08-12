@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 16px;
+}
+nav{
+	text-align: center;
+	font-size: 2rem;
+	position: relative;
+	margin-top: 5rem;
+}
+nav span{
+	display: inline-block;
+	background-color: white;
+	padding: 0 1rem;	
+}
+nav:before{
+	content: "";
+	border: 1px solid rgba(0,0,0,0.3);
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 1.1rem;
+	z-index: -1;
+}
+.item-head{
+	background-color: rgba(0,0,0,0.7);
+	padding: 1.5rem 0;
+	margin-top: 3rem;
+}
+.item-head>li{
+	display: inline-block;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.item-list div{
+	display: inline-block;
+}
+.item-head :nth-child(1){
+	width: 50%;
+	text-align: center;
+}
+.item-head>li:not(:nth-child(1)){
+	width: 12%;
+	text-align: center;
+}
+
+.item-list-msg{
+	width: 50%;
+	float: left;
+}
+/*.item-list-right{
+	width: 50%;
+	float: right;
+}
+.item-list-right:after{
+	content: "";
+	display: block;
+	overflow: hidden;
+	clear: both;
+}*/
+.item-list-price{
+	margin-left: 5%;
+}
+.item-list-number,.item-list-allprice{
+	margin-left: 7%;
+}
+.item-list-edit{
+	float: right;
+	margin-right: 6%;
+}
+.item-list-right>div{
+	width:24%;
+	text-align: center;
+}
+.list-check{
+	width:52px;	
+	margin-left: 10%;	
+}
+.list-type{
+	margin-left: 4rem;
+	width: 15rem;
+	margin-left:10rem;
+
+}
+.item-list{
+	margin-top: 4rem;
+	font-size:1.8rem;
+}
+.item-list>li{
+	margin-top: 1.5rem;
+}
+.item-list-number a{
+	display: inline-block;
+	color: red;
+	font-size: 1.5rem;
+}
+.item-list-number a:hover{
+	text-decoration: none;
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10rem;
+}
+.footer-left{
+	margin-left: 5%;
+}
+.footer-right{
+	display: flex;
+	align-items:baseline;
+	margin-right: 5%;
+}
+.countNum{
+	text-align: center;
+	width: 5em;
+}
+.chbox{
+	color: red;
+	font-size: 1.5rem;
+	margin-left: 3rem;
+}
+.footer-right{
+	font-size: 1.5em;
+	color: red;
+}

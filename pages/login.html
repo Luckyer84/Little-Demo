@@ -1,0 +1,76 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../src/css/login.css" rel="stylesheet" />
+<link href="../common/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<title>欢迎来到你的世界~</title>
+</head>
+
+<body>
+	<figure id="img-cloud-one" alt="The moving cloud" >
+		<img src="../images/login/cloud.png" />
+	</figure>
+	<figure id="img-cloud-two" alt="The moving cloud" >
+		<img src="../images/login/cloud_two.png" />
+	</figure>
+<div id="container">
+	<!--旋转-->
+  	<div class="container-left">
+  		<div class="area">
+			<figure class="stage">
+		    	<img src="../images/login/star1.jpg" alt="MyPic"/>
+		        <img src="../images/login/star2.jpg" alt="MyPic"/>
+		        <img src="../images/login/star3.png" alt="MyPic"/>
+		        <img src="../images/login/star4.jpg" alt="MyPic"/>
+		        <img src="../images/login/star5.jpg" alt="MyPic"/>
+		        <img src="../images/login/star6.jpg" alt="MyPic"/>
+    		</figure>
+		</div>
+  	</div>
+  	
+  	<!--登陆注册-->
+  	<div class="container-right">
+  		<div class="item">
+		  	<div class="item-register"><p>注册</p></div>
+		  	<div class="item-login" ><p>登陆</p></div>
+  		</div>
+  	 		<!--登陆框-->
+  	 	<div id="p1" class="part">
+  			<div class="brand-top"></div>
+  			<p class="part-theme"><span>LOGIN</span></p>
+  			<div class="inpt-grp" >
+  				<div class="inpt-type">	
+            		<input id="username" type="text" placeholder=" 邮箱/用户/已验证手记" class="form-control "/>
+            		<div id="user-info"></div>
+  				</div>
+  				<div class=" inpt-type">
+            		<input id="pwd" type="password" placeholder=" 密码" class="form-control"/>
+            		<div id="pwd-info"></div>
+  				</div>
+  				<button id="bt-go" class="btn btn-primary btn1 ">登       陆</button>
+  			</div>
+    	</div>	
+  	 		<!--注册框-->
+  	 <div id="p2" class="part">
+  			<div class="brand-top"></div>
+  			<p class="part-theme"><span>Register</span></p>
+  			<div class="inpt-grp" >
+  				<div class="inpt-type int">				 
+            		<input type="text" placeholder="手机号" class="form-control inp-r" style="width: 60%;" />
+  					<button id="send" class="btn btn-primary">发送验证码</button>
+  				</div>				
+  				<div class=" inpt-type">
+            		<input id="pwd" type="password" placeholder=" 密码" class="form-control"/>
+            		<div id="pwd-info"></div>
+  				</div>
+  				<button id="bo-reg" class="btn btn-primary btn1 ">注     册</button>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  
+ <script src="../common/libs/jquery/jquery-3.3.1.min.js" defer="defer"></script>
+<script src="../src/js/login.js" defer="defer"></script>
+</body>
+</html>
