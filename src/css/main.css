@@ -275,12 +275,13 @@ hr{
 	border: 1px solid rgba(0,0,0,0.3);
 	width: 90%;
 	margin-top: 5em;
+	margin-left: 5%;
 }
 .article-body{
 	display: flex;
 	display: -webkit-flex;
 	flex-wrap: wrap;
-	 align-items:center ;
+	align-items:center ;
 }
 .article-body>article{
 	border-radius: 8px;

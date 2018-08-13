@@ -98,7 +98,9 @@
 		//删除
 		deleteItem:function(value){
 			const index = this.list.indexOf(value);
-			this.list.splice(index,1)
+			this.list.splice(index,1);
+			this.computePrice();
+			
 		}
 	},
 		
