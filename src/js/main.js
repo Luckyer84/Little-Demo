@@ -69,17 +69,36 @@ $(document).ready(function() {
    })
    
    //图片切换
-    const pic=$(".body-main figure");//图片
+  	let count=0;
+   	const move=function(){
+   	const fig=$(".roll figure");
+   let nun = parseInt(fig.position().left)/-650;//获取鼠标事件当前图片的位置
+   let count =nun;
+	count++;
+	const wid=-650*count;
+	fig.animate({left:wid},100);
+		
+	if(count>3){
+		count=0;
+		fig.animate({left:0},0);
+	}
+    };
+    let timer=setInterval(move,4000);
+
+   var fig=$(".roll figure");//容器
+    const pic=$(".roll img");//图片
     const blackPoint=$("#main-blackPoint li"); //黑点
     for(let i=0;i<blackPoint.length;i++){
-	  const $pic_i = $(pic[i]); 
-	  const $blackPoint_i = $(blackPoint[i]);
+	 const $blackPoint_i = $(blackPoint[i]); 
     $blackPoint_i.hover(function(){
-    
-	  	$pic_i.css("display","block");
-	  	pic.not($pic_i).css("display","none");
-	  })
-}
+    	clearInterval(timer);
+    	const shift=-pic.width()*i;
+    	fig.animate({left:shift},500) 	
+		  },function(){
+			clearInterval(timer);
+			timer = setInterval(move,4000);
+		  })
+	}; 	
    //头像下面栏目事件的监听
      let num=0; 
      $("#lanmu").html(num);

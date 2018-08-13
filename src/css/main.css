@@ -125,6 +125,7 @@ sup{
 	left:310px;
 	background-color: white;
 	display: none;
+	height: 380px;
 }
 h4{
 	color: red;
@@ -251,7 +252,7 @@ h4{
 	display: flex;
 	flex-flow: row wrap;
 }
-.body-main figure{
+.body-main .roll{
 	margin: auto;
 }
 .body-main figure:not(:first-child){
@@ -377,4 +378,18 @@ hr{
 .sc-4{
 	margin-top: 1em;
 	color: rgba(0,0,0,0.5);
+}
+.roll{
+	width: 650px;
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+}
+.roll figure{
+	width: 2610px;
+	height: 350px;
+	animation: rollpic 10s linear infinite;
+	position: absolute;
+	left: 0;
+	font-size:0 ;
 }
