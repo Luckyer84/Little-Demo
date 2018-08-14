@@ -240,13 +240,14 @@ h4{
 }
 #main-blackPoint>li{
 	list-style-type: none;
-	height: 12px;
-	width: 12px;
+	height: 15px;
+	width: 15px;
 	border: 1px solid black;
 	display: inline-block;
 	border-radius: 50%;
 	box-shadow:2px 2px 2px ;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.2);
+	margin-left: 5px;
 }
 .body-main{
 	display: flex;
@@ -386,7 +387,7 @@ hr{
 	overflow: hidden;
 }
 .roll figure{
-	width: 2610px;
+	width: 650*5px;
 	height: 350px;
 	animation: rollpic 10s linear infinite;
 	position: absolute;
