@@ -1,10 +1,12 @@
-	var vm=new Vue({
+var vm=new Vue({
 	el:"#app",
 	data:{
 		list:[],
 		num:0,
 		totalMoney:0,
-		flag:false
+		flag:false,
+		isShow:false,
+		ok:false
 	},
 	mounted: function() {
 		//获取数据
@@ -41,19 +43,7 @@
 			}
 			this.computePrice();
 		},
-		//全选
-	/*	checkall:function(){
-			this.flag=!this.flag;
-			if(this.flag){
-				this.list.forEach(function(item){
-				item.checked=true
-				})
-			}else{
-				this.list.forEach(function(item){
-				item.checked=true
-				})
-			}
-		},*/
+		
 		//数量的加减
 		changeNum:function(item,index){
 			if(index>0){
@@ -76,6 +66,23 @@
 				}
 			})
 		},
+		deleteItem:function(){
+			this.isShow=true;
+			
+		},
+		isConfirm:function(value){
+			const index = this.list.indexOf(value);
+			this.list.splice(index,1);
+			this.computePrice();
+			this.isShow=false;
+			this.ok=true;
+			
+		},
+		isCancel:function(){
+			this.isShow=false;
+			this.ok=true;
+		},
+		
 		//总金额
 		/*jisuan:function(value){
 				const self=this;
@@ -95,13 +102,11 @@
 				}
 			})
 		},*/
-		//删除
-		deleteItem:function(value){
-			const index = this.list.indexOf(value);
-			this.list.splice(index,1);
-			this.computePrice();
-			
+		pay:function(){
+			alert("总共需要支付" +  this.totalMoney +"元")
 		}
 	},
 		
 })
+
+		

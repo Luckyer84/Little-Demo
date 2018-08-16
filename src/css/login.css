@@ -4,7 +4,7 @@
 	padding: 0;
 	margin: 0;	
 }
-body{ background-image: url(../../images/login/background.jpg);}
+body{ background-image: url(../../images/login/background.jpg); overflow: hidden;}
 #container{
 	display: flex;
 	justify-content:space-between;
@@ -15,7 +15,7 @@ body{ background-image: url(../../images/login/background.jpg);}
 	border-left: 1px solid white ;
 	width: 50%;
 	height: 100%;
-	margin: 7% 0 50px;
+	margin: 7% 0 ;
 }
 /*注册 登陆栏*/
 .item{

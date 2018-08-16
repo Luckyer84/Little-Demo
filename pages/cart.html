@@ -5,6 +5,7 @@
 		<title>购物车</title>
 		<link href="../src/css/cart.css" rel="stylesheet" />
 		<link href="../common/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />	
+
 	</head>
 	<body>
 
@@ -34,11 +35,20 @@
 								<a href="jacascript:void(0)" @click="changeNum(item,-1)">-</a>
 							</div>
 							<div class="item-list-allprice">¥{{item.count*item.price}}</div>
-							<div class="item-list-edit" @click="deleteItem(item)">删除</div>
-						
+							<div class="item-list-edit"><a href="#" class="delete-btn" @click="deleteItem">删除</a></div>
+							
+							<div class="alert-box" v-show="isShow">	
+								<div class="alert-container" >
+									<p class="alert-title">提示</p>
+									<div class="alert-icon"><embed src="../images/cart/cancel.svg" height="20" width="20" ></embed></div>
+									<div class="alert-body">
+										<a id="aconfirm" @click="isConfirm(item)">确定？</a>
+										<a id="acanel" @click="isCancel">取消！</a>
+									</div>
+								</div>
+							</div>
 					</li>
-				</ul>
-			
+				</ul>			
 			<div class="footer">
 				<div class="footer-left">
 					<div class="checkall">
@@ -49,15 +59,14 @@
 				<div class="footer-right">
 					<div>总金额:</div>
 					<div class="countNum">¥{{totalMoney}}</div>
-					<button class="btn btn-danger">结账</button>
+					<button class="btn btn-danger" @click="pay">结账</button>
 				</div>
 			</div>
 		</div>
-		
-		<div class="tt"></div>
 		<script src="../common/libs/vue/vue.js"></script>
 		<script src="../common/libs/vue/vue-resource.js"></script>
 		<script src="../common/libs/jquery/jquery-3.3.1.min.js"></script>
 		<script src="../src/js/cart.js"></script>
+		<script src="../src/js/cart-delete.js"></script>
 	</body>
 </html>

@@ -1,4 +1,20 @@
 $(document).ready(function(){
+	//缓存用户名和密码
+	if(!localStorage){
+		alert("浏览器不支持localStroage")
+	}else{
+			const strName=localStorage.getItem("UserName");
+			const strWord=localStorage.getItem("Pwd");
+			const userName=$("#username").val(strName);
+			const pwd=$("#pwd").val(strWord);
+	}
+	$("#bt-go").click(function(){
+		const userName = $('#username').val();
+       	const pwd = $('#pass').val();
+		localStorage.setItem("UserName",userName);
+		localStorage.setItem("Pwd",pwd);
+	})
+	
 	$(".item-register").click(function(){
 		$("#p2").css("display","block");
 		$("#p1").css("display","none");
@@ -7,6 +23,12 @@ $(document).ready(function(){
 		$("#p2").css("display","none");
 		$("#p1").css("display","block");
 	});
+	//注册
+	$("#bo-reg").click(function(){
+		alert("注册成功！");
+		$("#p2").css("display","none");
+		$("#p1").css("display","block");
+	})
 	//发送验证码
 	var time=60;
 	var timer = null;

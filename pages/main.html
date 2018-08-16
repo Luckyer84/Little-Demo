@@ -5,9 +5,9 @@
 <title>主题页面</title>
 <link href="../common/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 <link href="../src/css/main.css" rel="stylesheet" />
+
 </head>
 <body>
-	
 	<div class="total-head">
 		<div class="head-top">
 			<div class="head-top-positon">
@@ -70,7 +70,7 @@
 	<div class="total-body">
 		<div class="aside-left">	 
 	        <nav class="navbar self-nav">
-	            <ul id="uu" class="nav nav-pills nav-stacked">
+	            <ul id="left-aside" class="nav nav-pills nav-stacked">
 	                <li ><a href="javascript:void(0)">前端开发<span>></span></a></li>
 	                <li ><a href="javascript:void(0)">后端开发<span>></span></a></li>
 	                <li ><a href="javascript:void(0)">移动开发<span>></span></a></li>
@@ -81,31 +81,27 @@
 	            </ul>
 	        </nav>  
 		</div>
-		
-		<div class="body-main">
+		<div id="1" class="body-main">
 				<div class="roll">
-					<figure>
+					<figure >
 						<img src="../images/main/650-4.jpg"/>
-						<img src="../images/main/xiyang.jpg"/>
 						<img src="../images/main/650-3.jpg"/>
-						<img src="../images/main/yanhua.jpg"/>
 						<img src="../images/main/quxian.jpg"/>
+						<img src="../images/main/xiyang.jpg"/>
+						<img src="../images/main/yanhua.jpg"/>
+						<img src="../images/main/650-4.jpg"/>
 					</figure>
 				</div>
-			<ul id="main-blackPoint">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+				<ul id="main-blackPoint"></ul>
 		</div>
 		<!--右侧栏-->
 		<div class="aside-right">
 			<!--头像信息栏-->
 			<div class="aside-personInfo">
-				<figure><img src="../images/main/touxiang.jpg"  /></figure>
-				<div class="change-head"><a href="#">更改头像</a></div>	
+				<div>
+					<figure><img src="../images/main/touxiang.jpg"  /></figure>
+					<div class="change-head"><a href="#">更改头像</a></div>	
+				</div>
 				<div class="person-msg">
 					<p id="p1">Hi,<span class="showInfo"></span></p>
 					<p id="p2">欢迎回来，<span id="timeInfo"></span></p>
@@ -113,8 +109,14 @@
 			</div>
 			<!--数字栏-->
 			<div class="aside-num">
-				<div><span id="lanmu" class="num"></span><a><span>栏</span><br /><p>看 过</p></a></div>
-				<div><span class="num">0</span><a><span>条</span><br /><p>看 过</p></a></div>
+				<div>
+					<span id="lanmu" class="num">0</span>
+					<a><span>栏</span><br /><p>看 过</p></a>
+				</div>
+				<div>
+					<span class="num">0</span>
+					<a><span>条</span><br /><p>看 过</p></a>
+				</div>
 			</div>
 			<!--信息栏-->
 			<div id="tingall" class="aside-info">
@@ -122,8 +124,7 @@
 				<section><a href="#">6个工作后才知道的职场真相</a></section>
 				<section><a href="#">这样的职场法则你认同吗？</a></section>
 				<section><img src="../images/main/fire.png" /><a href="#">这是你要踏上的成功的阶梯吗？</a></section>
-			</div>
-				
+			</div>		
 		</div>		
 	</div>
 	<!--右侧固定栏-->
@@ -144,7 +145,6 @@
 	                    <li><a href="#">Javascript</a></li>
 	                    <li><a href="#">jQuery</a></li>
 	                </ul>
-	                
 	                <h4 style="margin-top:30px;">进阶</h4>
 	                <ul class="list-inline">
 	                	<li><a href="#">HTML5</a></li>
@@ -361,7 +361,6 @@
 	                    <li><a href="#">动画特效</a></li>
 	                    <li><a href="#">设计工具</a></li>
 	                </ul>
-	                
 	                <h4 style="margin-top:30px;">进阶</h4>
 	                <ul class="list-inline">
 	                	<li><a href="#">Unity 3D</a></li>
@@ -396,7 +395,6 @@
 				<span id="article-title-font">精彩手记和猿问</span>
 				<span><img src="../images/main/icon/riji.svg" width="20" height="20"/></span>
 		</div>
-		
 		<div class="article-body">
 				<article class="tip-1">
 					<div class="wrap">
@@ -456,9 +454,7 @@
 						</section>
 					</div>
 				</article>		
-			
-			
-			<article class="tip-3">
+				<article class="tip-3">
 					<div class="wrap">
 						<section class="sc-1">
 							<figure><img src="../images/main/icon/wenzhang.svg" height="16" width="16" /></figure>手记文章
@@ -486,7 +482,6 @@
 					</div>
 				</article>		
 			
-			
 				<article class="tip-5">
 					<div class="wrap">
 						<section class="sc-1">
@@ -501,7 +496,6 @@
 					</div>
 				</article>		
 			
-			
 				<article class="tip-6">
 					<div class="wrap">
 						<section class="sc-1">
@@ -515,8 +509,8 @@
 						</section>
 					</div>
 				</article>					
+			</div>
 		</div>
-	</div>
 <script src="../common/libs/jquery/jquery-3.3.1.min.js"></script>
 <script src="../src/js/main.js" ></script>
 <script src="../common/libs/bootstrap/js/bootstrap.js"></script>

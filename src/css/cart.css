@@ -2,6 +2,10 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+	width: 100%;
+	height: 100%;
+}
 html{
 	font-size: 16px;
 }
@@ -52,16 +56,9 @@ nav:before{
 	width: 50%;
 	float: left;
 }
-/*.item-list-right{
-	width: 50%;
-	float: right;
+.item-list{
+	list-style-type: none;
 }
-.item-list-right:after{
-	content: "";
-	display: block;
-	overflow: hidden;
-	clear: both;
-}*/
 .item-list-price{
 	margin-left: 5%;
 }
@@ -125,5 +122,91 @@ nav:before{
 }
 .footer-right{
 	font-size: 1.5em;
+	color: red;
+}
+.alert-box{
+	width: 100%;
+	height: 100%;
+	background-color:rgba(0,0,0,0.3);
+	position: absolute;
+	top: 0;
+	left: 0;	
+	display: block;
+}
+.alert-container{
+	width: 30%;
+	height: 25%;
+	background-color: white;
+	border-radius: 10px;
+	margin: auto;
+	box-shadow: 5px 7px 7px rgba(255,255,255,0.3);
+	position: absolute;
+	top: 0;
+	left: 35%;
+	transform: rotate(0deg);	
+}
+@media screen and (max-device-width:500px ) {
+		.alert-container{
+			width: 50%;
+			height: 10%;
+			background-color: white;
+			border-radius: 10px;
+			margin: auto;
+			box-shadow: 5px 7px 7px rgba(255,255,255,0.3);
+			position: absolute;
+			top: 0;
+			left: 25%;
+		}
+		.alert-body{
+			margin-left: 3rem;
+			
+		}
+}
+
+.alert-body>a{
+	font-size: 1.5rem;
+	color: white;
+	display: inline-block;
+	width: 8rem;
+	height: 3rem;
+	background-color: cornflowerblue;
+	text-align: center;
+	border-radius: 2px;
+	text-decoration: none;
+	line-height: 3rem;
+	margin-left: 3rem;
+}
+.alert-body>a:hover{
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	
+}
+.alert-body{
+	margin-top: 18%;
+}
+
+.alert-icon{
+	float: right;
+	margin-right: 1rem;
+	margin-top: 0.7rem;
+	height: 1rem;
+	width: 1rem;
+}
+.alert-title{
+	float: left;
+	color:coral;
+	font-size: 2rem;
+	margin-top: 1rem;
+	margin-left: 1.5rem;
+}
+.trt{
+	animation: rol 0.5s linear;
+}
+@keyframes rol{
+	from{transform: rotate(30deg);}
+	to{ transform: rotate(0);}
+}
+#ppp:active{
 	color: red;
 }
